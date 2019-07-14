@@ -32,9 +32,20 @@ addForm.addEventListener('submit', function(e){
     deleteBtn.textContent = 'delete';
     bookName.textContent = value;
 
+    // add classes
+    bookName.classList.add('name');
+    deleteBtn.classList.add('delete');
+
+
     // append to document
     li.appendChild(bookName);
     li.appendChild(deleteBtn);
     list.appendChild(li);
 
 });
+
+var li = document.querySelector('li:last-child');
+console.log(li);
+li.style.color = 'red';
+
+li.style.marginTop = '60px';
