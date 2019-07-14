@@ -44,8 +44,13 @@ addForm.addEventListener('submit', function(e){
 
 });
 
-var li = document.querySelector('li:last-child');
-console.log(li);
-li.style.color = 'red';
-
-li.style.marginTop = '60px';
+// hide books
+const hideBox = document.querySelector('#hide');
+console.log(hideBox);
+hideBox.addEventListener('change', function(e){
+    if(hideBox.checked){
+        list.style.display = "none";
+    } else {
+        list.style.display = "initial";
+    }
+});

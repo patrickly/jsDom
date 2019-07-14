@@ -115,6 +115,13 @@ h1, h2{
     clear: both;
 }
 
+#add-book #hide{
+    width: 30px;
+}
+
+#add-book label{
+    line-height: 52px;
+}
 /*
 #tabbed-content li{
     display: inline-block;
