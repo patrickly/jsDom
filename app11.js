@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function(){
+
+
+
 console.log(document.forms);
 console.log(document.forms[0]);
 console.log(document.forms['add-book']);
@@ -91,4 +95,6 @@ tabs.addEventListener('click', function(e){
         });
         
     }
+});
+
 });
