@@ -1,14 +1,10 @@
-var titles = document.getElementsByClassName('title');
+const wmf = document.querySelector('#book-list li:nth-child(2) .name'); // one space before .name (span)
+// console.log(wmf);
 
-//will give error since titles is not an array, since it's an html collection
+var books = document.querySelector('#book-list li .name');
+//console.log(books); // returns only 1 element
 
-// titles.forEach(function(item){
-//     console.log(item);
-// });
+books = document.querySelectorAll('#book-list li .name');
+//console.log(books); // returns collection of elements, so at least 1 
 
-console.log(Array.isArray(titles)); // false
-console.log(Array.isArray(Array.from(titles))); // true
-
-Array.from(titles).forEach(function(item){
-    console.log(item);
-});
+Array.from(books).forEach( book => console.log(book));
